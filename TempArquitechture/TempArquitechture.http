@@ -1,0 +1,6 @@
+@TempArquitechture_HostAddress = http://localhost:5038
+
+GET {{TempArquitechture_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
