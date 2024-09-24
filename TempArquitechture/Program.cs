@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<UserRepository>();
 builder.Services.AddSingleton<UserService>();
 builder.Services.AddDbContext<TempArquitechureContext>(dbContextOptions => dbContextOptions.UseSqlite(
-    builder.Configuration["ConnectionStrings:APIConnectionString"]));
+    builder.Configuration["ConnectionStrings:DBConnectionString"]));
 
 var app = builder.Build();
 

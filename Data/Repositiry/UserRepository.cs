@@ -14,5 +14,9 @@ namespace Data.Repositiry
         {
             _context = context;
         }
+        public List<User> Get()
+        {
+            return _context.Users.ToList();
+        }
     }
 }
